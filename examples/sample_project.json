@@ -1,0 +1,21 @@
+{
+  "name": "Demo Conveyor Line",
+  "version": "1.0",
+  "buses": [
+    {
+      "name": "Bus-A",
+      "protocol": "demo-fieldbus",
+      "modules": [
+        {"name": "DI-01", "module_type": "digital-input", "address": 1, "memory_bytes": 16, "settings": {"channels": 16}},
+        {"name": "DO-01", "module_type": "digital-output", "address": 2, "memory_bytes": 16, "settings": {"channels": 16}}
+      ]
+    },
+    {
+      "name": "Bus-B",
+      "protocol": "demo-fieldbus",
+      "modules": [
+        {"name": "AI-01", "module_type": "analog-input", "address": 1, "memory_bytes": 32, "settings": {"channels": 8}}
+      ]
+    }
+  ]
+}
