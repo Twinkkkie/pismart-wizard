@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pismart-wizard-portfolio-demo"
+version = "0.1.0"
+description = "Public synthetic demo of an industrial project configuration workflow"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+pismart-demo = "pismart_wizard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
